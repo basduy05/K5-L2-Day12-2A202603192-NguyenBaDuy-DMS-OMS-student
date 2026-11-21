@@ -1,0 +1,7 @@
+frame_id,source,phenomenon,affected_field,effect_on_label
+S01_ir,IR_sim,Dây an toàn tối màu chìm hoàn toàn vào nền ghế nỉ đen trong ảnh kênh đơn mô phỏng,seatbelt,Phải đổi từ quan sát RGB sang unknown vì không còn tương phản màu sắc
+S05_ir,IR_sim,Túi xách màu đỏ trên ảnh RGB mất sắc độ chỉ còn mảng xám mờ đồng mức với mặt đệm ghế,object_type,Khó nhận diện chất liệu vải; phải dựa vào hình khối viền để gán type=bag thay vì suy đoán
+S07_ir,IR_sim,Vật thể kim loại trong ghế trẻ em không có phản xạ quang học đa bước sóng,object,Giữ nguyên vị trí box nhưng thuộc tính type chuyển sang other do mất tương phản bề mặt
+D01,real_IR,Đèn LED phát xạ NIR 940nm gây đốm loá phản xạ gương cực mạnh trên tròng kính cận,eye_right,Không nhìn thấy con ngươi và khe mí; bắt buộc gán unknown thay vì closed
+D03,real_IR,Tài xế đeo kính râm chống nắng nhưng bước sóng NIR đi xuyên qua tròng kính thấy rõ mắt,glasses,Thuộc tính glasses ghi nhận sun; trạng thái mắt vẫn quan sát được để gán open
+D04,real_IR,Tài xế quay mặt góc nghiêng lớn khiến sống mũi và má che khuất hoàn toàn mắt phải,face13.right_eye_*,Bật cờ occluded=1 cho 4 điểm mắt phải; không vẽ điểm bừa bãi
