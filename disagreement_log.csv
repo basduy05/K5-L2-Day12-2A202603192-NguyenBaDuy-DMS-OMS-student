@@ -1,0 +1,48 @@
+﻿image,label,field,issue,mine,peer,verdict,guideline_rule,action
+D01.png,face,gaze_zone,khác giá trị (IoU=0.79),center,road,peer,4.5,"Thống nhất theo peer: mắt tài xế nhìn thẳng đường qua kính chắn gió, gaze_zone = road."
+D02.png,person,seatbelt,khác giá trị (IoU=0.99),unknown,not_worn,peer,4.7,"Thống nhất theo peer: quan sát rõ không có dây an toàn vắt qua vai người lái, chọn not_worn."
+D03.png,face,gaze_zone,khác giá trị (IoU=0.82),road,other,mine,4.5,Thống nhất theo mine: hướng nhìn cơ bản hướng về phía trước kính chắn gió road.
+D03.png,face13,mouth_left.occluded,khác cờ,1,0,ambiguous,4.6,Ca mơ hồ: vùng môi có bóng tối đổ nhẹ; hai bạn thống nhất để occluded=0 do vẫn định vị chính xác điểm mốc.
+D03.png,face13,mouth_right.occluded,khác cờ,1,0,ambiguous,4.6,Ca mơ hồ: vùng môi có bóng tối đổ nhẹ; hai bạn thống nhất để occluded=0 do vẫn định vị chính xác điểm mốc.
+D03.png,face13,lip_upper.occluded,khác cờ,1,0,ambiguous,4.6,Ca mơ hồ: vùng môi có bóng tối đổ nhẹ; hai bạn thống nhất để occluded=0 do vẫn định vị chính xác điểm mốc.
+D03.png,face13,lip_lower.occluded,khác cờ,1,0,ambiguous,4.6,Ca mơ hồ: vùng môi có bóng tối đổ nhẹ; hai bạn thống nhất để occluded=0 do vẫn định vị chính xác điểm mốc.
+D04.png,face,eye_left,khác giá trị (IoU=0.71),unknown,open,peer,4.5,Thống nhất theo peer: thấy rõ khe mi mắt mở (không bị che). Nhật Anh sửa unknown thành open để hết 2 WARN.
+D04.png,face,eye_right,khác giá trị (IoU=0.71),unknown,open,peer,4.5,Thống nhất theo peer: thấy rõ khe mi mắt mở (không bị che). Nhật Anh sửa unknown thành open để hết 2 WARN.
+D04.png,face,gaze_zone,khác giá trị (IoU=0.71),center,cluster,peer,4.5,Thống nhất theo peer: đầu và mắt nhìn hơi chúc xuống bảng đồng hồ sau vô lăng (cluster).
+D04.png,face13,mouth_right.occluded,khác cờ,1,0,ambiguous,4.6,Ca mơ hồ: vùng môi có bóng tối đổ nhẹ; hai bạn thống nhất để occluded=0 do vẫn định vị chính xác điểm mốc.
+S01_ir.png,child_seat,seat,khác giá trị (IoU=0.90),rear_right,rear_left,mine,4.4-3,Thống nhất theo mine: camera nhìn về sau nên trái ảnh là phải xe (rear_right). Duy sửa rear_left thành rear_right trong v2.
+S01_rgb.png,child_seat,seat,khác giá trị (IoU=0.89),rear_right,rear_middle,mine,4.4-3,Thống nhất theo mine: camera nhìn về sau nên trái ảnh là phải xe (rear_right). Duy sửa rear_middle thành rear_right trong v2.
+S02_ir.png,infant_seat,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,ambiguous,4.8,"Bất đồng lớp: mine gọi infant_seat, peer gọi child_seat; chấp nhận child_seat cho loại ghế có đệm nâng."
+S02_ir.png,person,seat,khác giá trị (IoU=0.98),rear_left,rear_right,mine,4.4-3,Thống nhất theo mine: camera nhìn về sau nên trái ảnh là phải xe (rear_right). Duy sửa rear_right thành rear_left trong v2.
+S02_ir.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,ambiguous,4.8,"Bất đồng lớp: mine gọi infant_seat, peer gọi child_seat; chấp nhận child_seat cho loại ghế có đệm nâng."
+S02_rgb.png,infant_seat,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,ambiguous,4.8,"Bất đồng lớp: mine gọi infant_seat, peer gọi child_seat; chấp nhận child_seat cho loại ghế có đệm nâng."
+S02_rgb.png,person,seat,khác giá trị (IoU=0.98),rear_left,rear_right,mine,4.4-3,Thống nhất theo mine: camera nhìn về sau nên trái ảnh là phải xe (rear_right). Duy sửa rear_right thành rear_left trong v2.
+S02_rgb.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,ambiguous,4.8,"Bất đồng lớp: mine gọi infant_seat, peer gọi child_seat; chấp nhận child_seat cho loại ghế có đệm nâng."
+S03_ir.png,object,seat,khác giá trị (IoU=0.94),rear_right,rear_left,mine,4.4-3,Thống nhất theo mine: camera nhìn về sau nên trái ảnh là phải xe (rear_right). Duy sửa rear_left thành rear_right trong v2.
+S03_rgb.png,frame_meta,light,khác giá trị,unknown,day,mine,SVIRO rules,"Thống nhất theo mine: SVIRO là dữ liệu 3D dựng máy, bắt buộc light=unknown. Duy sửa trong v2."
+S03_rgb.png,object,seat,khác giá trị (IoU=0.95),rear_right,rear_left,mine,4.4-3,Thống nhất theo mine: camera nhìn về sau nên trái ảnh là phải xe (rear_right). Duy sửa rear_left thành rear_right trong v2.
+S04_ir.png,infant_seat,seat,khác giá trị (IoU=0.99),rear_right,rear_left,mine,4.4-3,Thống nhất theo mine: camera nhìn về sau nên trái ảnh là phải xe (rear_right). Duy sửa rear_left thành rear_right trong v2.
+S04_ir.png,child_seat,seat,khác giá trị (IoU=0.99),rear_left,rear_right,mine,4.4-3,Thống nhất theo mine: camera nhìn về sau nên trái ảnh là phải xe (rear_right). Duy sửa rear_right thành rear_left trong v2.
+S04_rgb.png,frame_meta,light,khác giá trị,unknown,day,mine,SVIRO rules,"Thống nhất theo mine: SVIRO là dữ liệu 3D dựng máy, bắt buộc light=unknown. Duy sửa trong v2."
+S04_rgb.png,infant_seat,seat,khác giá trị (IoU=1.00),rear_right,rear_left,mine,4.4-3,Thống nhất theo mine: camera nhìn về sau nên trái ảnh là phải xe (rear_right). Duy sửa rear_left thành rear_right trong v2.
+S04_rgb.png,child_seat,seat,khác giá trị (IoU=0.98),rear_left,rear_right,mine,4.4-3,Thống nhất theo mine: camera nhìn về sau nên trái ảnh là phải xe (rear_right). Duy sửa rear_right thành rear_left trong v2.
+S05_ir.png,frame_meta,light,khác giá trị,unknown,day,mine,SVIRO rules,"Thống nhất theo mine: SVIRO là dữ liệu 3D dựng máy, bắt buộc light=unknown. Duy sửa trong v2."
+S05_ir.png,infant_seat,seat,khác giá trị (IoU=0.99),rear_right,rear_left,mine,4.4-3,Thống nhất theo mine: camera nhìn về sau nên trái ảnh là phải xe (rear_right). Duy sửa rear_left thành rear_right trong v2.
+S05_rgb.png,frame_meta,light,khác giá trị,unknown,day,mine,SVIRO rules,"Thống nhất theo mine: SVIRO là dữ liệu 3D dựng máy, bắt buộc light=unknown. Duy sửa trong v2."
+S05_rgb.png,infant_seat,seat,khác giá trị (IoU=0.98),rear_right,rear_left,mine,4.4-3,Thống nhất theo mine: camera nhìn về sau nên trái ảnh là phải xe (rear_right). Duy sửa rear_left thành rear_right trong v2.
+S06_ir.png,infant_seat,seat,khác giá trị (IoU=0.98),rear_right,rear_left,mine,4.4-3,Thống nhất theo mine: camera nhìn về sau nên trái ảnh là phải xe (rear_right). Duy sửa rear_left thành rear_right trong v2.
+S06_ir.png,child_seat,seat,khác giá trị (IoU=0.99),rear_left,rear_right,mine,4.4-3,Thống nhất theo mine: camera nhìn về sau nên trái ảnh là phải xe (rear_right). Duy sửa rear_right thành rear_left trong v2.
+S06_rgb.png,frame_meta,light,khác giá trị,unknown,day,mine,SVIRO rules,"Thống nhất theo mine: SVIRO là dữ liệu 3D dựng máy, bắt buộc light=unknown. Duy sửa trong v2."
+S06_rgb.png,infant_seat,seat,khác giá trị (IoU=0.97),rear_right,rear_left,mine,4.4-3,Thống nhất theo mine: camera nhìn về sau nên trái ảnh là phải xe (rear_right). Duy sửa rear_left thành rear_right trong v2.
+S06_rgb.png,child_seat,occupied,khác giá trị (IoU=0.99),no,yes,mine,4.1,Thống nhất theo mine: schema chỉ cho phép no/unknown (không có yes). Duy sửa thành no/unknown trong v2.
+S06_rgb.png,child_seat,seat,khác giá trị (IoU=0.99),rear_left,rear_right,mine,4.4-3,Thống nhất theo mine: camera nhìn về sau nên trái ảnh là phải xe (rear_right). Duy sửa rear_right thành rear_left trong v2.
+S07_ir.png,object,seat,khác giá trị (IoU=0.96),rear_right,rear_left,mine,4.4-3,Thống nhất theo mine: camera nhìn về sau nên trái ảnh là phải xe (rear_right). Duy sửa rear_left thành rear_right trong v2.
+S07_rgb.png,frame_meta,light,khác giá trị,unknown,day,mine,SVIRO rules,"Thống nhất theo mine: SVIRO là dữ liệu 3D dựng máy, bắt buộc light=unknown. Duy sửa trong v2."
+S07_rgb.png,object,seat,khác giá trị (IoU=0.96),rear_right,rear_left,mine,4.4-3,Thống nhất theo mine: camera nhìn về sau nên trái ảnh là phải xe (rear_right). Duy sửa rear_left thành rear_right trong v2.
+S08_ir.png,infant_seat,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,ambiguous,4.8,"Bất đồng lớp: mine gọi infant_seat, peer gọi child_seat; chấp nhận child_seat cho loại ghế có đệm nâng."
+S08_ir.png,person,seat,khác giá trị (IoU=0.99),rear_left,rear_right,mine,4.4-3,Thống nhất theo mine: camera nhìn về sau nên trái ảnh là phải xe (rear_right). Duy sửa rear_right thành rear_left trong v2.
+S08_ir.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,ambiguous,4.8,"Bất đồng lớp: mine gọi infant_seat, peer gọi child_seat; chấp nhận child_seat cho loại ghế có đệm nâng."
+S08_rgb.png,frame_meta,light,khác giá trị,unknown,day,mine,SVIRO rules,"Thống nhất theo mine: SVIRO là dữ liệu 3D dựng máy, bắt buộc light=unknown. Duy sửa trong v2."
+S08_rgb.png,person,seat,khác giá trị (IoU=0.98),rear_left,rear_right,mine,4.4-3,Thống nhất theo mine: camera nhìn về sau nên trái ảnh là phải xe (rear_right). Duy sửa rear_right thành rear_left trong v2.
+S08_rgb.png,infant_seat,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,ambiguous,4.8,"Bất đồng lớp: mine gọi infant_seat, peer gọi child_seat; chấp nhận child_seat cho loại ghế có đệm nâng."
+S08_rgb.png,child_seat,box,chỉ có ở peer (hoặc IoU thấp),,,ambiguous,4.8,"Bất đồng lớp: mine gọi infant_seat, peer gọi child_seat; chấp nhận child_seat cho loại ghế có đệm nâng."

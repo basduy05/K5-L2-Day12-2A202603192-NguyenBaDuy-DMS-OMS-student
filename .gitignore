@@ -11,3 +11,9 @@ __pycache__/
 *.pyc
 .DS_Store
 .env*
+
+G07.zip
+GUI_*.zip
+GUI_QC_G07/
+KET_QUA_QC_GUI_NHAT_ANH.zip
+PHAN_HOI_QC_CHO_NHAT_ANH.txt
